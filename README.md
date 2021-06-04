@@ -15,8 +15,10 @@ MAX7219 Display ----->	Arduino
 <p>DIN	    11 
 <p>CS	      3 
 <p>CLK	    13 
-Dot Matrix | Arduino
------------- | -------------
-VCC | 5V
-GND | GND
   
+  
+| LED Dot Matrix        | Arduino           | 
+| ------------- |:-------------:| 
+| col 3 is      | right-aligned | 
+| col 2 is      | centered      |  
+| zebra stripes | are neat      | 
