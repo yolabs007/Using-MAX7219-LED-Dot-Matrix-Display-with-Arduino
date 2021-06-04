@@ -19,7 +19,9 @@ To control the MAX7219 display we will be using two awesome Arduino libraries.
 | CS                    | 3                 |  
 | CLK                   | 13                | 
   
-  # Display Text code :
+  # Display Text - code :
+  
+  *In Below code, change the code where `myDisplay.print("Center")` to display whaterever text want shown on LED Matrix.
   
 ```C++ 
   
@@ -48,24 +50,26 @@ void setup() {
 
 void loop() {
   myDisplay.setTextAlignment(PA_CENTER);
-  myDisplay.print("Center");
+  myDisplay.print("Center");         // Change  `Center` to display diferent text.
   delay(2000);
   myDisplay.setTextAlignment(PA_LEFT);
-  myDisplay.print("Left");
+  myDisplay.print("Left");           // Change  `Left` to display diferent text.
   delay(2000);
   myDisplay.setTextAlignment(PA_RIGHT);
-  myDisplay.print("Right");
+  myDisplay.print("Right");          // Change  `Right` to display diferent text.
   delay(2000);
   myDisplay.setTextAlignment(PA_CENTER);
   myDisplay.setInvert(true);
-  myDisplay.print("Invert");
+  myDisplay.print("Invert");          // Change  `Invert` to display diferent text.
   delay(2000);
 }
   
   
 ```
  
-  # Scroll Text code : 
+  # Scroll Text - code : 
+  
+   *In Below code, change the code where `myDisplay.displayText( "YOLABS" )` to display whaterever text want shown on LED Matrix.
   
 ```C++ 
   
@@ -90,7 +94,7 @@ void setup() {
   myDisplay.setIntensity(0);
   // Clear the display:
   myDisplay.displayClear();
-  myDisplay.displayText("YOLABS", PA_CENTER, 100, 0, PA_SCROLL_LEFT, PA_SCROLL_LEFT);
+  myDisplay.displayText("YOLABS", PA_CENTER, 100, 0, PA_SCROLL_LEFT, PA_SCROLL_LEFT);    // Change  `YOLABS` to display diferent text.
 }
 
 void loop() {
