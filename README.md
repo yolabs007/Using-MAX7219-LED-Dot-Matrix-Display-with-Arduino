@@ -60,7 +60,8 @@ To control the MAX7219 display we will be using two awesome Arduino libraries.
   
   # Display Text - code :
   
-  *In Below code, change the code where `myDisplay.print("Center")` to display whaterever text want shown on LED Matrix.
+  * In Below code, change the code where `myDisplay.print("Center")` to display whaterever text want shown on LED Matrix.
+  * Change the Intensity Values ( 0 ~ 16 ) in below code to Brighten the Matrix Display.
   
 ```C++ 
   
@@ -108,7 +109,8 @@ void loop() {
  
   # Scroll Text - code : 
   
-   *In Below code, change the code where `myDisplay.displayText( "YOLABS" )` to display whaterever text want shown on LED Matrix.
+   * In Below code, change the code where `myDisplay.displayText( "YOLABS" )` to display whaterever text want shown on LED Matrix.
+   * Change the Intensity Values ( 0 ~ 16 ) in below code to Brighten the Matrix Display.
   
 ```C++ 
   
